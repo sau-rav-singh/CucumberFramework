@@ -24,13 +24,13 @@ public class Hooks {
 	@After
 	public void AfterScenario() throws IOException {
 
-		testContextSetup.testBase.WebDriverManager().quit();
+		testContextSetup.testBase.driverInitialization().quit();
 
 	}
 
 	@AfterStep
 	public void AddScreenshot(Scenario scenario) throws IOException {
-		WebDriver driver = testContextSetup.testBase.WebDriverManager();
+		WebDriver driver = testContextSetup.testBase.driverInitialization();
 		if (scenario.isFailed()) {
 			// screenshot
 			File sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
