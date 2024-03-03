@@ -17,6 +17,7 @@ public class LandingPage {
     }
 
     public void enterSearchTerm(String productName) {
+        driver.findElement(SEARCH).clear();
         driver.findElement(SEARCH).sendKeys(productName);
     }
 

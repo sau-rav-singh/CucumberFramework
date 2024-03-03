@@ -12,7 +12,7 @@ public class LandingPageStepDefinitions {
 
     public LandingPageStepDefinitions(TestContextSetup testContextSetup) {
         this.testContextSetup = testContextSetup;
-        this.landingPage =testContextSetup.pageObjectManager.getLandingPage();
+        this.landingPage = testContextSetup.pageObjectManager.getLandingPage();
     }
 
     @Given("User is on GreenCart Landing page")

@@ -10,5 +10,7 @@ Feature: Search and Place the order for Products
     Examples:
       | Name   |
       | Tom    |
-     # | Carrot |
-
+      | Carrot |
+@OffersPage
+Scenario: Close the Browser
+  Given Close the Browser
