@@ -23,5 +23,6 @@ public class OffersPage {
     public List<String> searchProduct(String productName){
         driver.findElement(SEARCH).sendKeys(productName);
         return driver.findElements(By.xpath("//tbody/tr/td[1]")).stream().map(WebElement::getText).collect(Collectors.toList());
+
     }
 }

@@ -1,8 +1,6 @@
 package TestUtils;
 
-import org.openqa.selenium.WebDriver;
 import pageObjects.PageObjectManager;
-
 import java.io.IOException;
 import java.util.List;
 

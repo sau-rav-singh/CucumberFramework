@@ -3,15 +3,13 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class LandingPage {
 
-    private By SEARCH = By.xpath("//input[@type='search']");
-    private By PRODUCTNAMES = By.xpath("//div[@class='product']");
+    private final By SEARCH = By.xpath("//input[@type='search']");
+    private final By PRODUCTNAMES = By.xpath("//div[@class='product']");
     WebDriver driver;
 
     public LandingPage(WebDriver driver) {
