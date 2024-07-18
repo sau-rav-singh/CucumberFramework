@@ -11,6 +11,6 @@ public class Hooks {
     }
     @After
     public void tearDown(){
-        //testContextSetup.testBase.getDriver().quit();
+        testContextSetup.testBase.getDriver().quit();
     }
 }
