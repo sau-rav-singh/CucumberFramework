@@ -26,4 +26,18 @@ public class LandingPageStepDefinitions {
         testContextSetup.searchResults = landingPage.extractProductNames();
         testContextSetup.searchResults.forEach(System.out::println);
     }
+
+    @When("Added {string} items of the selected product to cart")
+    public void Added_items_product(String quantity)
+    {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        landingPage.incrementQuantity(Integer.parseInt(quantity));
+        landingPage.addToCart();
+
+    }
+
 }
