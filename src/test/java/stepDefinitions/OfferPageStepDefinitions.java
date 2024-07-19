@@ -2,7 +2,6 @@ package stepDefinitions;
 
 import TestUtils.TestContextSetup;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.testng.Assert;
 import pageObjects.OffersPage;
@@ -31,8 +30,4 @@ public class OfferPageStepDefinitions {
         testContextSetup.genericUtils.switchToMainPage();
     }
 
-    @Given("Close the Browser")
-    public void closeTheBrowser() {
-        offersPage.closeBrowser();
-    }
 }

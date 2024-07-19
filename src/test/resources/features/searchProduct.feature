@@ -11,6 +11,4 @@ Feature: Search and Place the order for Products
       | Name   |
       | Tom    |
       | Carrot |
-@OffersPage
-Scenario: Close the Browser
-  Given Close the Browser
+      | Potato |
