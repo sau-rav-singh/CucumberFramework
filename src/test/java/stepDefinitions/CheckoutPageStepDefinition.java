@@ -21,7 +21,7 @@ public class CheckoutPageStepDefinition {
     }
 
     @Then("^User proceeds to Checkout and validate the (.+) items in checkout page$")
-    public void user_proceeds_to_checkout(String name) throws InterruptedException {
+    public void user_proceeds_to_checkout(String name) {
         checkoutPage.CheckoutItems();
     }
 }
