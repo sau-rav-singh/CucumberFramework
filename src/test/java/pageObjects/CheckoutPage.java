@@ -28,5 +28,4 @@ public class CheckoutPage {
         return driver.findElement(placeOrder).isDisplayed();
     }
 
-
 }
